@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ChaiCSS Demo</title>
+
+  <script src="./main.js" defer></script>
+
+  <style>
+    body {
+      background: #111;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: #1e1e1e;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    .box {
+      border-radius: 6px;
+    }
+
+    .btn {
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <h1 class="chai-text-center chai-text-white chai-text-xl chai-m-4">
+      🚀 ChaiCSS Engine
+    </h1>
+
+    <p class="chai-text-center chai-text-white chai-m-4">
+      Build your own utility-first CSS using JavaScript 💡
+    </p>
+
+    <!-- Card -->
+    <div class="card chai-p-4">
+      <h2 class="chai-text-white chai-m-2">Card Component</h2>
+      <p class="chai-text-white chai-m-2">
+        This UI is styled using your ChaiCSS utilities.
+      </p>
+
+      <button class="btn chai-p-2 chai-bg-blue chai-text-white chai-rounded ">
+        Click Me
+      </button>
+    </div>
+
+    <!-- Flex Center -->
+    <div class="card chai-p-4 chai-h-40 chai-flex chai-justify-center chai-items-center">
+      <div class="chai-p-3 chai-bg-black chai-text-white chai-rounded">
+        Centered Box
+      </div>
+    </div>
+
+    <!-- Colors -->
+    <div class="card chai-p-4">
+      <h3 class="chai-text-white chai-m-2">Color Utilities</h3>
+
+      <div class="box chai-p-2 chai-bg-red chai-text-white chai-m-2">Red Box</div>
+      <div class="box chai-p-2 chai-bg-green chai-text-white chai-m-2">Green Box</div>
+      <div class="box chai-p-2 chai-bg-blue chai-text-white chai-m-2">Blue Box</div>
+      <div class="box chai-p-2 chai-bg-yellow chai-text-black chai-m-2">Yellow Box</div>
+    </div>
+
+    <!-- Grid Example -->
+    <div class="card chai-p-4 chai-grid chai-grid-cols-3 chai-gap-2">
+      <div class="chai-bg-pink chai-p-2">1</div>
+      <div class="chai-bg-orange chai-p-2">2</div>
+      <div class="chai-bg-gray chai-p-2">3</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
